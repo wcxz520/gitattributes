@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check:gitattributes": "node check-gitattributes.js",
+    "verify:eol": "git ls-files --eol | grep -v 'i/lf' && echo '❌ 有文件不是 LF' || echo '✅ 所有文件都是 LF'"
   },
   "dependencies": {
     "react": "^19.2.0",
