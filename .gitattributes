@@ -1,9 +1,9 @@
 # 核心配置：所有文本文件自动检测，统一使用 LF, 测试 git ls-files --eol
-* text=auto eol=lf
+* text=auto eol=crlf
 
 # ========== SVG 文件 ==========
 # SVG 作为文本文件处理（推荐）
-*.svg text eol=lf
+*.svg text eol=crlf
 
 # # 创建测试
 # echo -e "line1\nline2" > lf-file.txt
