@@ -1,6 +1,10 @@
 # git check-attr text -- <文件名>
 # git check-attr eol -- <文件名>
 # git ls-files --eol
+
+# 提交后本地不会刷新最新
+# git rm --cached -r .
+# git reset --hard
 * text=auto eol=crlf
 *.txt text eol=crlf
 *.js text eol=crlf
