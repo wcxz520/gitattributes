@@ -2,23 +2,9 @@
 # git check-attr eol -- <文件名>
 # git ls-files --eol
 
-# 提交/拉取后执行转换
+# 提交/拉取后 清除缓存并重置
 # git rm --cached -r .
 # git reset --hard
 
 * text=auto eol=lf
-# *.txt text eol=crlf
-# *.js text eol=crlf
-# *.html text eol=crlf
-# *.css text eol=crlf
-# *.md text eol=crlf
-# *.json text eol=crlf
-# *.xml text eol=crlf
-# * text=auto eol=lf
-# *.txt text eol=lf
-# *.js text eol=lf
-# *.html text eol=lf
-# *.css text eol=lf
-# *.md text eol=lf
-# *.json text eol=lf
-# *.xml text eol=lf
+# * text=auto eol=crlf
