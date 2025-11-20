@@ -1,28 +1,12 @@
-# 核心配置：所有文本文件自动检测，统一使用 LF, 测试 git ls-files --eol
-# * text=auto eol=crlf
-# 明确指定文件类型，而不是依赖 auto
-* text=auto eol=crlf
-*.txt text eol=crlf
-*.java text eol=crlf
-*.js text eol=crlf
-*.html text eol=crlf
-*.css text eol=crlf
-*.md text eol=crlf
-*.json text eol=crlf
-*.xml text eol=crlf
-
-# ========== SVG 文件 ==========
-# SVG 作为文本文件处理（推荐）
-*.svg text eol=crlf
-
-# # 创建测试
-# echo -e "line1\nline2" > lf-file.txt
-# echo -e "line1\r\nline2" > crlf-file.txt
-
-# # 添加到 Git 前查看
-# hexdump -C lf-file.txt    # 应该显示 0a
-# hexdump -C crlf-file.txt  # 应该显示 0d 0a
-
-# git add .
-# git ls-files --eol
-# # 两个文件在索引中都应该是 i/lf
+# git check-attr text -- <文件名>
+# git check-attr eol -- <文件名>
+git ls-files --eol
+* text=auto eol=lf
+*.txt text eol=lf
+*.java text eol=lf
+*.js text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.xml text eol=lf
