@@ -1,6 +1,6 @@
 # git check-attr text -- <文件名>
 # git check-attr eol -- <文件名>
-git ls-files --eol
+# git ls-files --eol
 * text=auto eol=lf
 *.txt text eol=lf
 *.java text eol=lf
