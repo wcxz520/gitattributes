@@ -6,5 +6,5 @@
 # git rm --cached -r .
 # git reset --hard
 
-* text=auto eol=lf
-# * text=auto eol=crlf
+# * text=auto eol=lf
+* text=auto eol=crlf
